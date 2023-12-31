@@ -30,7 +30,7 @@
      color: #fff;
      display: inline-block;
      font-weight: bold;
-     font-size: 18px;
+     font-size: 16px;
      position: relative;
    }
    
@@ -85,3 +85,44 @@
      font-size: 16px;
      font-weight: 700;
     }
+    /* hero section */
+    .hero-section{
+     height: 100vh;
+     width: 100%;
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     padding-top: 60px;
+    }
+.hero-section .left{
+     width: 457px;
+}
+.hero-section .left h1{
+     color: #FFF;
+     font-family:" Raleway",sans-serif;
+     font-size: 50px;
+     font-weight: 900;
+     line-height: 125%;  
+}
+.hero-section .left p{
+     color: #FFF;
+     font-family: Poppins;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 200%;  
+     margin-bottom: 30px;
+}
+.hero-section .right{
+     align-self: flex-end;
+}
+.hero-section .right img{
+     width: 446px;
+     height: 582px;
+     vertical-align: middle;
+}
+
+
+    /* achievement-card */
+.achievement-card{
+     display: none;
+}
