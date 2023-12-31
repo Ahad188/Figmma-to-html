@@ -92,11 +92,11 @@
      align-items: center;
      display: flex;
      justify-content: space-between;
+     gap: 60px;
      padding-top: 60px;
+     position: relative;
     }
-.hero-section .left{
-     width: 457px;
-}
+
 .hero-section .left h1{
      color: #FFF;
      font-family:" Raleway",sans-serif;
@@ -111,6 +111,10 @@
      font-weight: 400;
      line-height: 200%;  
      margin-bottom: 30px;
+     width: 457px;
+}
+.hero-section .left{
+     flex: 1;
 }
 .hero-section .right{
      align-self: flex-end;
@@ -118,11 +122,57 @@
 .hero-section .right img{
      width: 446px;
      height: 582px;
+     margin-left: 200px;
      vertical-align: middle;
 }
 
-
-    /* achievement-card */
+/* achievement-card */
 .achievement-card{
-     display: none;
+    position: absolute;
+}
+.achievement-card .content{
+     border-radius: 24px;
+     background-color: #fff;
+     padding: 8px 32px;
+     position: relative;
+     z-index: 10;
+}
+.achievement-card.student-enrol{
+     top:250px;
+     left:53%;
+}
+.achievement-card.overall-rating{
+     top:520px;
+     left: 45%;
+}
+.content h3{
+     color: #023047;
+     font-family: "Poppins",sans-serif;
+     font-size: 36px;
+     font-weight: 700;  
+     margin: 0;   
+     text-align: center;
+}
+.content p{
+     color:  var(--dark-blue-color);
+     font-family: "Poppins";
+     font-size: 16px;
+     font-weight: 400;
+     margin: -8px;
+     margin-bottom: 8px;
+}
+.achievement-card .bg{
+     position: absolute;
+     top: 8px;
+     left: 8px;
+     width: 100%;
+     height: 100%;
+     border-radius: 24px;
+     background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+     z-index: 1;
+}
+.overall-rating .content div{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
